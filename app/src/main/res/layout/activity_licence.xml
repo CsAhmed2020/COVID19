@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activites.LicenceActivity"
+    android:background="@drawable/background_image">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/licence_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/licence_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/licences"
+            app:titleTextColor="@android:color/white"
+            android:theme="@style/Widget.AppCompat.PopupMenu.Overflow"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_5964549___coronovirus_home_stay"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"/>
+
+            <TextView
+                android:id="@+id/name_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#F5F5F5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My GitHub Profile:"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:layout_marginTop="5dp"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://github.com/Adelpk2020"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My LinkedIn Profile:"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:layout_marginTop="5dp"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://www.linkedin.com/in/aahmed2020/"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Examination Source"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:layout_marginTop="5dp"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://www.hellooha.com/quizzes/98-اختبار-كورونا-أون-لاين-اختبار-بسيط-لكورونا"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_res"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:layout_marginTop="5dp"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text=" https://www.iconfinder.com/p/coronavirus-awareness-icons"
+                    android:textColor="?android:textColorSecondary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:layout_marginTop="5dp"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://www.google.com/covid19/"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp">
+
+                <View
+                    android:id="@+id/dividerx"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#F5F5F5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Libraries"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Navigation_compounent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/libraries"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:layout_gravity="left"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

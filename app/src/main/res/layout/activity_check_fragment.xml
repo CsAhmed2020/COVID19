@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Fragments.CheckFragment"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/warning_title"
+            android:id="@+id/warning_title"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_warning"
+            android:layout_toLeftOf="@id/warning_title"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warning"
+        android:layout_marginTop="20sp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginRight="8dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on start button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/navy"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_btn"
+        android:text="  Start"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_5859219___lap_microscope_research_test_virus"
+        />
+</LinearLayout>

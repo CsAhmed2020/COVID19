@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">COVID19</string>
+
+    <string name="egypt">Egypt</string>
+    <string name="all_cases">All Cases</string>
+    <string name="world">Worldwide</string>
+    <string name="emergency">Emergency</string>
+    <string name="licences" translatable="false">Licences</string>
+    <string name="about_virus">About Virus</string>
+    <string name="medical_advice">Medical advice</string>
+    <string name="more">More</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="today_cases">Today Cases</string>
+    <string name="total_cases_ar">إجمالي الحالات</string>
+    <string name="today_cases_ar">حالات اليوم</string>
+    <string name="total_death">Total Deaths</string>
+    <string name="total_death_ar">إجمالي الوفيات</string>
+    <string name="today_death">Today_deaths</string>
+    <string name="today_death_ar">وفيات اليوم</string>
+    <string name="recovery_cases">Recovered cases</string>
+    <string name="recovery_cases_ar">حالات الشفاء</string>
+    <string name="critical_cases">Critical Cases</string>
+    <string name="critical_cases_ar">الحالات لاحرجة</string>
+    <string name="active_cases">Active Cases</string>
+    <string name="active_cases_ar">الحالات النشطة</string>
+    <string name="deaths_per_million">Deaths per million</string>
+    <string name="deaths_per_million_ar">نسبة الوفيات لكل مليون</string>
+    <string name="cases_per_million">Cases per million</string>
+    <string name="cases_per_million_ar">نسبة الإصابات لكل مليون</string>
+    <string name="covid_number">الخط الساخن لطوارئ كورونا  105</string>
+    <string name="call">  Call</string>
+    <string name="ambulance_number">رقم الإسعاف 123</string>
+    <string name="emergency_police">رقم شرطة الطوارئ 122</string>
+    <string name="fast_road_number"> رقم الطرق السريعة 01221110000</string>
+    <string name="covid_info1_ar">مرض فيروس كورونا (كوفيد-19) هو مرض معدٍ يسببه فيروس جديد لم يُكتشف في البشر من قبل.
+ويسبب الفيروس مرض الجهاز التنفسي (مثل الأنفلونزا) المصحوب بأعراض مثل السعال والحمى، كما يسبب الالتهاب الرئوي في الحالات الأشد وخامة. ويمكنك حماية نفسك بالمواظبة على غسل اليدين وتحاشي لمس الوجه.</string>
+    <string name="how_ar">كيف ينتشر المرض ؟</string>
+    <string name="covid_info2_ar">ينتشر فيروس كورونا الجديد بشكل أساسي عن طريق مخالطة شخص مصاب بالعدوى عندما يسعل أو يعطس، أو عن طريق القُطيرات أو اللعاب أو إفرازات الأنف.</string>
+    <string name="covid_info1">Coronavirus disease (COVID-19) \n is an infectious disease caused by a new virus.
+The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</string>
+    <string name="covid_info2">Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth.</string>
+    <string name="how">How it spreads ?</string>
+    <string name="icon_res">Icons and Content Resources</string>
+    <string name="stay_home">Stay safe\nstay Home</string>
+    <string name="total_cases_both_lang">Total Cases\nإجمالي الحالات</string>
+    <string name="total_deaths_both_lang">Total Deaths\nإجمالي الوفيات</string>
+    <string name="today_cases_both_lang">Today Cases\nحالات اليوم</string>
+    <string name="today_deaths_both_lang">Today Deaths\nوفيات اليوم</string>
+    <string name="recovered_cases_both_lang">Recovered\nالمتعافون</string>
+    <string name="critical_cases_both_lang">Critical Cases\nالحالات الحرجة</string>
+    <string name="active_cases_both_lang">Active Cases\nالحالات النشطة</string>
+    <string name="deaths_per_mil_both_lang">Deaths Per Million\nنسبة الوفيات لكل مليون</string>
+    <string name="cases_per_mil_both_lang">Cases Per Million\nنسبة الإصابات لكل مليون</string>
+    <string name="home">Home</string>
+    <string name="check_yourself">Check Yourself</string>
+    <string name="advice">Advices</string>
+    <string name="libraries">Navigation Component\n\nRetrofit\n\nModel View View Model \n\nMaterial Design Components\n\nLiveData\n\nRecyclerView\n\nCardView</string>
+    <string name="warning">هذا الاختبار البسيط لكورونا أون لاين لا يغني عن استشارة الطبيب المختص ولا يعتبر بديلاً للاختبارات المعملية المعتمدة بأي حال من الأحوال.
+إذا كانت نتيجة اختبار كورونا على الانترنت ترجّح إصابتك بفيروس كورونا المستجد عليك حجر نفسك منزلياً والتواصل مع الجهات الصحية المعتمد والمختصة في بلدك لاتخاذ الإجراءات المناسبة.</string>
+    <string name="warning_title">تنبية</string>
+</resources>

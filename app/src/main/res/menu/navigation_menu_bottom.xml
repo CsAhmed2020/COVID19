@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/egyptFragment_item"
+        android:title="@string/home"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_home"/>
+
+
+    <item android:id="@+id/worldFragment_item"
+        android:title="@string/world"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_world"/>
+
+    <item android:id="@+id/adviceFragment_item"
+        android:title="@string/advice"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_advice"/>
+
+    <item android:id="@+id/checkFragment_item"
+        android:title="@string/check_yourself"
+        app:showAsAction="always"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_check"/>
+
+    <item android:id="@+id/emergencyFragment_item"
+        android:title="@string/emergency"
+        app:showAsAction="always"
+        android:orderInCategory="5"
+        android:icon="@drawable/ic_emergency"/>
+
+</menu>
