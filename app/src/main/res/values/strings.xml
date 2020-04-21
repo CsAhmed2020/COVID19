@@ -58,4 +58,33 @@ The disease causes respiratory illness (like the flu) with symptoms such as a co
     <string name="warning">هذا الاختبار البسيط لكورونا أون لاين لا يغني عن استشارة الطبيب المختص ولا يعتبر بديلاً للاختبارات المعملية المعتمدة بأي حال من الأحوال.
 إذا كانت نتيجة اختبار كورونا على الانترنت ترجّح إصابتك بفيروس كورونا المستجد عليك حجر نفسك منزلياً والتواصل مع الجهات الصحية المعتمد والمختصة في بلدك لاتخاذ الإجراءات المناسبة.</string>
     <string name="warning_title">تنبية</string>
+    <string name="ques_title_ar">أجب عن السؤال الآتي</string>
+    <string name="ques1_ar">هل كنت على احتكاك مباشر مع شخص تبيّن لاحقاً أنه مصاب بفيروس كورونا؟</string>
+    <string name="ques2_ar">هل تعاني من الحمى أو إرتفاع درجة الحرارة؟</string>
+    <string name="ques3_ar">هل سافرت إلى أي دولة خلال الأسبوعين الماضيين؟</string>
+    <string name="ques4_ar">هل تعاني من سعال جاف؟</string>
+    <string name="ques5_ar">هل تعاني من صعوبة في التنفس؟</string>
+    <string name="ques6_ar">هل تشعر بوخز في الحلق أو إلتهاب في الحلق؟</string>
+    <string name="ques7_ar">هل تعاني من العطس باستمرار؟</string>
+    <string name="ques8_ar">هل لديك سيلان أنف؟</string>
+    <string name="ques9_ar">هل تشعر بتعب عام وفتور بالهمة والنشاط؟</string>
+    <string name="ques10_ar">هل لديك صداع مستمر؟</string>
+    <string name="ques11_ar">هل لديك آلام بالعضلات؟</string>
+    <string name="positive_result">قد تكون مصاباً بفيروس كورونا، اعزل نفسك في المنزل ولا تذهب إلى المستشفى أو المراكز الصحية وعليك أن تبادر فوراً للاتصال بالجهات الصحية المختصة في بلدك لاتخاذ الإجراءات اللازمة.</string>
+    <string name="negative_result">أنت بأمان، برجاء الإلتزام بالإرشادات الوقائية والبقاء بالمنزل.</string>
+    <string name="end_msg">إنتهت</string>
+    <string name="result_word">النتيجو</string>
+
+    <string name="source">Source</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="time">Time</string>
+    <string name="error_title">Error Title</string>
+    <string name="error_message">Error Message</string>
+    <string name="retry">Retry</string>
+    <string name="date_tv_res">19 April 2020</string>
+    <string name="top_headlines">Top</string>
+    <string name="breaking_news">إضغط للذهاب لصفحة أخر الأخبار</string>
+
 </resources>

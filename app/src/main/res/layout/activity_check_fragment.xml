@@ -8,58 +8,82 @@
     android:orientation="vertical"
     android:background="@drawable/background_image">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/cards_shape"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/warning_title"
-            android:id="@+id/warning_title"
-            android:textSize="25sp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:textStyle="bold"/>
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_warning"
-            android:layout_toLeftOf="@id/warning_title"
-            />
-    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/warning"
-        android:layout_marginTop="20sp"
-        android:textSize="15sp"
-        android:padding="5dp"
-        android:layout_marginRight="8dp"
-        android:textStyle="italic"
-        android:textColor="@color/black"
-        android:fontFamily="sans-serif-black"
-        android:layout_marginEnd="8dp"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click on start button"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:text="لإجراء الفحص السريع إضغط على زر Start"
+        android:layout_marginTop="15dp"
         android:textSize="20sp"
-        android:textColor="@color/navy"
-        android:textStyle="italic"
-        android:fontFamily="sans-serif-black" />
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:maxEms="10"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginEnd="10dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/start_btn"
-        android:text="  Start"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
+        android:text=" Start"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/call_btn_shape"
         android:drawableLeft="@drawable/ic_5859219___lap_microscope_research_test_virus"
         />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/card_news"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#900021df">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breaking_news"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:maxEms="8"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingHorizontal="15dp"/>
+        <com.example.covid19.Utils.GifImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/GifImageView2"
+             android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.example.covid19.Utils.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GifImageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        />
+
 </LinearLayout>

@@ -3,10 +3,16 @@ package com.example.covid19.UI.Fragments;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 
 import android.content.DialogInterface;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,52 +21,93 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.covid19.R;
+import com.example.covid19.UI.Activites.NewsActivity;
+import com.example.covid19.Utils.GifImageView;
 
 public class CheckFragment extends Fragment {
 
     private static final String TAG = "CheckFragment";
     Button startbtn;
     int counter=0;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.activity_check_fragment,container,false);
         startbtn=view.findViewById(R.id.start_btn);
+        GifImageView gifImageView, gifImageView2;
+        gifImageView= (GifImageView) view.findViewById(R.id.GifImageView);
+        gifImageView2=(GifImageView) view.findViewById(R.id.GifImageView2);
+        gifImageView.setGifImageResource(R.drawable.covid);
+        gifImageView2.setGifImageResource(R.drawable.breaking_news);
+        CardView cardView=view.findViewById(R.id.card_news);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), NewsActivity.class));
+            }
+        });
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Adel");
                 AlertDialog.Builder builderSingle =new AlertDialog.Builder(view.getContext());
-                builderSingle.setIcon(R.drawable.ic_checklist);
-                builderSingle.setTitle("أجب عن السؤال الآتي ");
-                builderSingle.setMessage("هل كنت على احتكاك مباشر مع شخص تبيّن لاحقاً أنه مصاب بفيروس كورونا؟");
-                builderSingle.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                builderSingle.setIcon(R.drawable.ic_warning);
+                builderSingle.setTitle(R.string.warning_title);
+                builderSingle.setMessage(R.string.warning);
+                builderSingle.setPositiveButton("البدء", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        counter+=20;
-                        customDialog();
+                        customDialog1();
                     }
                 });
 
-                builderSingle.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        customDialog();
-                    }
-                });
                 builderSingle.show();
             }
 
         });
 
+
         return view;
     }
 
-    public void customDialog(){
+    public void customDialog1(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل تعاني من الحمى أو إرتفاع درجة الحرارة؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques1_ar);
+
+        alertDialog.setNegativeButton(
+                "No",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        customDialog2();
+                    }
+                });
+
+        alertDialog.setPositiveButton(
+                "Yes",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        counter+=20;
+                        customDialog2();
+                    }
+                });
+
+
+        alertDialog.show();
+
+
+    }
+
+
+    public void customDialog2(){
+        AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
+        alertDialog.setIcon(R.drawable.ic_checklist);
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques2_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -90,8 +137,8 @@ public class CheckFragment extends Fragment {
     public void customDialog3(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل سافرت إلى أي دولة خلال الأسبوعين الماضيين؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques3_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -119,8 +166,8 @@ public class CheckFragment extends Fragment {
     public void customDialog4(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل تعاني من سعال جاف؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques4_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -148,8 +195,8 @@ public class CheckFragment extends Fragment {
     public void customDialog5(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل تعاني من صعوبة في التنفس؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques5_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -178,8 +225,8 @@ public class CheckFragment extends Fragment {
     public void customDialog6(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل تشعر بوخز في الحلق أو إلتهاب في الحلق؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques6_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -208,8 +255,8 @@ public class CheckFragment extends Fragment {
     public void customDialog7(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل تعاني من العطس باستمرار؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques7_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -237,8 +284,8 @@ public class CheckFragment extends Fragment {
     public void customDialog8(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل لديك سيلان أنف؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques8_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -266,8 +313,8 @@ public class CheckFragment extends Fragment {
     public void customDialog9(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل تشعر بتعب عام وفتور بالهمة والنشاط؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques9_ar);
 
         alertDialog.setNegativeButton(
                 "No",
@@ -295,8 +342,8 @@ public class CheckFragment extends Fragment {
     public void customDialog10(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل لديك صداع مستمر؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques10_ar);
         alertDialog.setNegativeButton(
                 "No",
                 new DialogInterface.OnClickListener() {
@@ -324,8 +371,8 @@ public class CheckFragment extends Fragment {
     public void customDialog11(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("أجب عن السؤال الآتي");
-        alertDialog.setMessage("هل لديك آلام بالعضلات؟");
+        alertDialog.setTitle(R.string.ques_title_ar);
+        alertDialog.setMessage(R.string.ques11_ar);
         alertDialog.setNegativeButton(
                 "No",
                 new DialogInterface.OnClickListener() {
@@ -333,9 +380,11 @@ public class CheckFragment extends Fragment {
                     public void onClick(DialogInterface dialog, int which) {
                         if(getCounter()>=20){
                             positiveCustomDialog();
+                            counter=0;
                         }else
                         {
                             negativeCustomDialog();
+                            counter=0;
                         }
                     }
                 });
@@ -348,9 +397,11 @@ public class CheckFragment extends Fragment {
                         counter+=2;
                         if (getCounter()>=20){
                             positiveCustomDialog();
+                            counter=0;
                         }else
                         {
                             negativeCustomDialog();
+                            counter=0;
                         }
 
                     }
@@ -368,16 +419,17 @@ public class CheckFragment extends Fragment {
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
         alertDialog.setTitle(getCounter()+" النتيجة ");
-        alertDialog.setMessage("قد تكون مصاباً بفيروس كورونا، اعزل نفسك في المنزل ولا تذهب إلى المستشفى أو المراكز الصحية وعليك أن تبادر فوراً للاتصال بالجهات الصحية المختصة في بلدك لاتخاذ الإجراءات اللازمة.");
+        alertDialog.setMessage(R.string.positive_result);
         alertDialog.show();
     }
 
     public void negativeCustomDialog(){
         AlertDialog.Builder alertDialog =new AlertDialog.Builder(this.getContext());
         alertDialog.setIcon(R.drawable.ic_checklist);
-        alertDialog.setTitle("انتهت");
-        alertDialog.setMessage("أنت بأمان، برجاء الإلتزام بالإرشادات الوقائية والبقاء بالمنزل.");
+        alertDialog.setTitle(R.string.end_msg);
+        alertDialog.setMessage(R.string.negative_result);
         alertDialog.show();
     }
+
 
 }

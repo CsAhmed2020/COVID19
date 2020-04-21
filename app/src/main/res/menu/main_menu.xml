@@ -7,17 +7,24 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_more">
         <menu>
-            <item android:id="@+id/about"
-                android:title="@string/about_virus"
+            <item android:id="@+id/news_item"
+                android:title="News"
                 android:orderInCategory="1"
                 app:showAsAction="always"
                 android:icon="@drawable/ic_about_virus"
                 />
-            <item android:id="@+id/licences"
-                android:title="@string/licences"
+            <item android:id="@+id/about"
+                android:title="@string/about_virus"
                 android:orderInCategory="2"
                 app:showAsAction="always"
-                android:icon="@drawable/ic_licence"
+                android:icon="@drawable/ic_about_virus"
+                />
+
+            <item android:id="@+id/licences"
+                android:title="@string/licences"
+                android:orderInCategory="3"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_about_virus"
                 />
 
         </menu>

@@ -30,7 +30,8 @@
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     android:layout_gravity="start"
-                    app:lottie_rawRes="@raw/stay_home">
+                    app:lottie_rawRes="@raw/stay_home"
+                    app:lottie_enableMergePathsForKitKatAndAbove="true">
                 </com.airbnb.lottie.LottieAnimationView>
                 <TextView
                     android:layout_width="wrap_content"

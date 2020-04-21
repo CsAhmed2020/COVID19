@@ -24,4 +24,9 @@
     <color name="card_bg_dark_color">#0e0e0e</color>
     <color name="title_text_color">#258bd6</color>
     <color name="content_text_color">#2B2B2B</color>
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+
 </resources>

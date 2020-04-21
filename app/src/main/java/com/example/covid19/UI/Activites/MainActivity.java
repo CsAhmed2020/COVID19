@@ -15,6 +15,7 @@ import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.covid19.R;
 import com.example.covid19.UI.Fragments.AdviceFragment;
 import com.example.covid19.UI.Fragments.CheckFragment;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setItemIconTintList(null);
         navigationView.setOnNavigationItemSelectedListener(listener);
         Toolbar mainToolbar = findViewById(R.id.toolbar);
+        LottieAnimationView lottieAnimationView=findViewById(R.id.animation_view);
+        lottieAnimationView.enableMergePathsForKitKatAndAbove(true);
 
         if(egyptViewModel.getIsLoading().getValue()!= null
                 && !egyptViewModel.getIsLoading().getValue()){
@@ -48,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
             if(item.getItemId() == R.id.about){
                 startActivity(new Intent(MainActivity.this, AboutActivity.class));
+            }else if (item.getItemId()==R.id.news_item){
+                startActivity(new Intent(MainActivity.this,NewsActivity.class));
             }
 
 
